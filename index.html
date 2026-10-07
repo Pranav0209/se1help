@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LEAP Recap · Sprints 3–9</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<!-- ===== HUB: one main card per sprint ===== -->
+<section id="hub" class="screen">
+
+<header class="hub-head">
+<h1>LEAP Recap</h1>
+<p class="hub-sub">Pick a sprint to open its question deck</p>
+</header>
+
+<section
+id="hubCards"
+class="hub-grid"
+aria-label="Sprint decks">
+</section>
+
+<footer class="hub-foot">
+Made with ❤️ by Amirtha · To my amazing SE1 Folks!
+</footer>
+
+</section>
+
+<!-- ===== DECK: Q&A tiles for one sprint ===== -->
+<section id="deck" class="screen hidden">
+
+<header class="deck-head">
+
+<button id="backBtn" class="back-btn" type="button">
+← All sprints
+</button>
+
+<div class="deck-title">
+<h2 id="deckName">Sprint</h2>
+<p id="deckSub" class="deck-sub"></p>
+</div>
+
+</header>
+
+<section
+id="deckCards"
+class="card-grid"
+aria-label="Question cards">
+</section>
+
+</section>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
